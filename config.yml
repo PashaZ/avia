@@ -1,0 +1,200 @@
+baseURL: 'http://example.org/'
+languageCode: 'en-us'
+title: 'My New Hugo Site'
+# -------------------------------------------------------------
+
+
+# sitename: "Site Name!"
+# baseURL: "/"
+# languageCode: en-us
+# title: "Kaslaanka Theme"
+# author: John Doe
+
+# enableEmoji: true
+# hasCJKLanguage: false
+# # You can change code highlight theme
+# pygmentsstyle: "tango"
+# pygmentscodefences: true
+
+# # if you want to add html to your markdown
+# markup:
+#   goldmark:
+#     renderer:
+#       unsafe: true
+
+# # Links of the navbar
+# menu:
+#   primary:
+#     - name: Home
+#       url: /
+#       weight: 1
+#     - name: About
+#       url: /about
+#       weight: 2
+#     - name: Subscribe
+#       url: /index.xml
+#       weight: 3
+
+# # You can add languages!
+# # do not expect it to work out of the box
+# # https://gohugo.io/content-management/multilingual/
+# defaultContentLanguage: en
+# languages:
+#   en:
+#     LanguageName: English
+#     # contentDir: content/english
+#   ru:
+#     LanguageName: русский
+#     # contentDir: content/russian
+
+# params:
+#   sitename: "Kaslaanka Theme"
+#   # it will produce: copyrights (c) 2022 joe
+#   copyrights: John Doe
+#   # path to the favicon directory
+#   # see ./layouts/_defaults/baseof.html line #30 to line #37
+# #  faviconpath: "/img/favicon"
+#   # projects will show in the index page
+#   myprojects:
+#     - name: "Totally Awesome Project"
+#       description: "Machine Learning Magic!!!"
+#       url: https://example.com
+#     - name: "Kaslaanka"
+#       description: "The best hugo theme ever!!!"
+#       url: https://github.com/M1cR0xf7/kaslaanka
+#   # link to more projects
+#   # show your github repositories as example
+#   # or create your own page.
+#   projectsURL: https://example.com
+
+#   # a brief about me
+#   brief_about: <center>Kaslaanka theme demo made with ❤️</center>
+
+#   # articles archive url (default)
+#   archive: blog
+
+# # and don't forget
+# theme: kaslaank
+
+# ----------------------------------------------------------------------------------------------
+
+# baseurl = "https://example.com"
+# title = "Hugo Tanka Theme Demo"
+# author = "Nan Xiao"
+# canonifyurls = true
+# languagecode = "en"
+# theme = "hugo-tanka"
+
+# enableEmoji = true
+# hasCJKLanguage = false
+
+# pygmentsstyle = "vs"
+# pygmentscodefences = true
+
+# ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+
+# [params]
+#   sitename = "Hugo Tanka Theme +55"
+#   faviconfile = "images/favicon.png"
+#   highlightjs = true
+#   highlightjslanguages = ["r", "python", "stan"]
+#   uselatex = true
+#   progressively = false
+# # commentsrepo = "user/repo"
+
+# [markup]
+#   [markup.goldmark]
+#     [markup.goldmark.renderer]
+#       unsafe = true
+
+# [[menu.primary]]
+#     name = "Home"
+#     url = "/"
+#     weight = 5
+# [[menu.primary]]
+#     name = "About"
+#     url = "/about/"
+#     weight = 2
+# [[menu.primary]]
+#     name = "GitHub"
+#     url = "https://github.com/nanxstats"
+#     weight = 3
+# [[menu.primary]]
+#     name = "Twitter"
+#     url = "https://twitter.com/nanxstats"
+#     weight = 4
+# [[menu.primary]]
+#     name = "Subscribe"
+#     url = "/index.xml"
+#     weight = 1
+
+# -----------------------------------------------------------
+# theme: paige
+
+# authors:
+#   michael_bluth:
+#     name: "Michael Bluth"
+#     default: true # Credit this author in pages that have no authors parameter
+#   george_bluth:
+#     name: "George Bluth"
+# paige:
+#   analytics:
+#     chartbeat: # chartbeat.com
+#       account_id: "123456"
+#       domain: "example.com"
+#     clicky: # clicky.com
+#       account_id: "123456"
+#     fathom: # usefathom.com
+#       account_id: "123456"
+#     finteza: # finteza.com
+#       account_id: "123456"
+#       script_url: "https://example.com/script.js"
+#     hotjar: # hotjar.com
+#       account_id: "123456"
+#     matomo: # matomo.org
+#       account_id: "123456"
+#       host_url: "https://example.com"
+#     mixpanel:
+#       token: "123456"
+#     plausible: # plausible.io
+#       account_id: "123456"
+#     woopra: # woopra.com
+#       domain: "example.com"
+#     yandex: # metrica.yandex.com
+#       account_id: "123456"
+#   bootstrap:
+#     icons_path: "my-assets/my-bootstrap-icons.css" # Use local Bootstrap icons
+#     scripts_path: "my-assets/my-bootstrap.bundle.min.js" # Use local Bootstrap scripts
+#     styles_path: "my-assets/my-bootstrap.min.css" # Use local Bootstrap styles
+#   color: "#123456" # Theme color for Safari and Windows
+#   comments:
+#     cactus: # cactus.chat
+#       account_id: "123456"
+#     commento: # commento.io
+#       script_url: "https://example.com/script.js"
+#     hyvor: # hyvor.com
+#       account_id: "123456"
+#     intensedebate: # intensedebate.com
+#       account_id: "123456"
+#     isso: # isso-comments.de
+#       script_url: "https://example.com/script.js"
+#     remark42: # remark42.com
+#       host_url: "https://example.com"
+#       site_id: "123456"
+#     replybox: # getreplybox.com
+#       account_id: "123456"
+#     utterances: # utteranc.es
+#       github_repo: "example/foo"
+#   date_format: "2006 January 2" # Hugo date format for page dates
+#   hide_theme_comment: true # Don't put a link to this project in a code comment
+#   hide_theme_link: true # Don't put a link to this project in the footer
+#   rss:
+#     managing_editor: "Michael Bluth"
+#     web_master: "Michael Bluth"
+#   social: # Social links on the home page
+#     examplesite:
+#       icon: example-icon # Bootstrap icon name
+#       link: https://example.com/username
+#       name: Example Name # Used for screen readers
+
+     
