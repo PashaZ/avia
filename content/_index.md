@@ -1,5 +1,5 @@
 ---
 
-title: Авиатор
+title: Авиатор index.md
 
 ---
