@@ -7,14 +7,35 @@
     <nav class="navbar is-fixed-top has-shadow">
 <div class="container">
     <a class="logotype" href="/">
-        Авиа<span>тор</span> 
+        Авиа<span>тор</span> - Title
     </a>
+
 <div class="navbar-menu navbar">
-        {{range where .Site.RegularPages "Type" "page"}}
+    
+        {{range where .Site.RegularPages "Type"  "download"}}
+        
             <a href="{{.Permalink}}" class="navbar-item">
                 {{.Title}}
             </a>
         {{end}}
+        {{range where .Site.RegularPages "Type"  "play"}}
+        
+        <a href="{{.Permalink}}" class="navbar-item">
+            {{.Title}}
+        </a>
+    {{end}}
+    {{range where .Site.RegularPages "Type"  "reviews"}}
+        
+    <a href="{{.Permalink}}" class="navbar-item">
+        {{.Title}}
+    </a>
+{{end}}
+{{range where .Site.RegularPages "Type"  "strategies"}}
+        
+<a href="{{.Permalink}}" class="navbar-item">
+    {{.Title}}
+</a>
+{{end}}
     </div>
 </div>
     </nav>

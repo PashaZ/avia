@@ -1,5 +1,0 @@
----
-
-title: post index.md
-
----

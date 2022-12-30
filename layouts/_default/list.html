@@ -1,11 +1,6 @@
 {{define "content"}}
-<!-- <h1 style="color:red">{{ .Title}}</h1> -->
+<h1>this is list.html under</h1>
 <h1>Игра Авиатор</h1>
 <p>Популярная разработка Spribe, не теряющая востребованность с 2020 года!</p>
-{{range where .Site.RegularPages "Type" "posts"}}
 
-<a href="{{ .Permalink}}" class="navbar-item">
-{{ .Title}}
-</a> 
-{{end}}
 {{end}}
