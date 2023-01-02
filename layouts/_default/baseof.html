@@ -3,39 +3,54 @@
 
 {{partial "head" .}}
 
-<body class="has-navbar-fixed-top">
-    <nav class="navbar is-fixed-top has-shadow">
+<body >
+    <nav class="nav">
 <div class="container">
-    <a class="logotype" href="/">
-        Авиа<span>тор</span> - Title
+    <a class="logo" href="/">
+        Авиа<span class="logo-span">тор</span>
     </a>
 
-<div class="navbar-menu navbar">
-    
-        {{range where .Site.RegularPages "Type"  "download"}}
+<button class="menu-btn"></button> 
+
+<div class="navbar-list">
+    {{range where .Site.RegularPages "Type"  "page"}}
+        
+    <a href="/" class="navbar-item">
+        {{.Title}}
+    </a>
+{{end}}    
+{{range where .Site.RegularPages "Type"  "reviews"}}
         
             <a href="{{.Permalink}}" class="navbar-item">
                 {{.Title}}
             </a>
-        {{end}}
-        {{range where .Site.RegularPages "Type"  "play"}}
+{{end}}
+{{range where .Site.RegularPages "Type"  "strategies"}}
         
         <a href="{{.Permalink}}" class="navbar-item">
             {{.Title}}
         </a>
-    {{end}}
-    {{range where .Site.RegularPages "Type"  "reviews"}}
+{{end}}
+{{range where .Site.RegularPages "Type"  "download"}}
         
     <a href="{{.Permalink}}" class="navbar-item">
         {{.Title}}
     </a>
 {{end}}
-{{range where .Site.RegularPages "Type"  "strategies"}}
+{{range where .Site.RegularPages "Type" "play"}}
         
 <a href="{{.Permalink}}" class="navbar-item">
     {{.Title}}
 </a>
 {{end}}
+<ul class="dropdown langs ">
+    <span class="with-angle navbar-item">🇷🇺 RU</span>
+    <!-- <li><a href="">🇩🇪 DE</a></li>
+    <li><a href="">🇰🇿 KZ</a></li>
+    <li><a href="">🇺🇿 UZ</a></li> -->
+</ul>
+
+
     </div>
 </div>
     </nav>
