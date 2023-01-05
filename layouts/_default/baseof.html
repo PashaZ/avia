@@ -58,6 +58,46 @@
 {{block "content" .}}{{end}}
 {{block "footer" .}}{{end}}
 
+<script>
+    $(document).ready(function(){
+    
+    $('body').append('<div class="cover"></div>');
+     	
+   	$('.menu-btn').click(
+		function() {
+            $('.nav').slideToggle();
+            $(this).toggleClass('active');
+            $('.cover').fadeToggle();
+            	});
+            	
+   	$('.nav span.with-angle').click(
+		function() {
+		    $('.nav ul.dropdown').hide();
+		    $('.nav span.with-angle').removeClass('active');
+            $(this).next('.nav ul.dropdown').slideToggle();
+            $(this).toggleClass('active');
+            $('.cover').show();
+            	});
+     
 
+
+        
+
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                $('#scroll-top').fadeIn();
+            } else {
+                $('#scroll-top').fadeOut();
+            }
+        });
+        $('#scroll-top').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+        });
+
+            	
+        console.log("hello555")
+            	
+});
+</script>
 </body>
 </html>

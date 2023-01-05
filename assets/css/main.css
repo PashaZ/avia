@@ -1,3 +1,8 @@
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css"); 
+
+@font-face{font-family:'Source Sans Pro'; font-weight: normal; font-style: normal; src:url(../font/SourceSansPro-Regular.ttf) format("truetype"); font-display: swap; }
+@font-face{font-family:'Source Sans Pro'; font-weight: bold; font-style: normal; src:url(../font/SourceSansPro-Bold.ttf) format("truetype"); font-display: swap; }
+
 *{
     margin: 0px;
     padding:0px;
@@ -273,5 +278,60 @@ h3{
     text-align: center;
 
     margin: 20px 10px 0;}
+
+    /* scroll  */
+.cover { 
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+     }
+     .active{
+     color: rgb(205,65,100); 
+    }
+    .menu-btn.active:before { transform: rotate(90deg); 
+    }
+
+    #scroll-top {
+        background: rgb(205,65,100); 
+        border-radius: 50%;
+        border: 0 none;
+        -moz-transition: 0.3s ease;
+        -webkit-transition: 0.3s ease;
+        -o-transition: 0.3s ease; 
+        transition: 0.3s ease;
+        overflow: hidden;
+        opacity: 0.9;
+        position: fixed;
+        z-index: 20000;
+        right: 20px;
+        bottom: 20px; 
+        cursor: pointer; 
+        display: none; 
+        width: 60px; 
+        height: 60px; 
+        line-height: 60px; 
+        font-size: 30px;
+        text-align: center; 
+        justify-content: center;
+    }
+
+    #scroll-top:before {
+    color: #FFFFFF;
+    /* font-family: "Font Awesome 5 Free"; */
+    font-family: 'Line Awesome Free';  
+    content:'\f106';
+    /* content: url('/images/up.svg'); */
+    display: block;
+    height: inherit;
+    line-height: inherit;
+    font-weight: 900; 
+}
+    #scroll-top:hover { opacity: 1; }
+    #scroll-top.circle-radius { border-radius: 50%; }
+    
 
 
