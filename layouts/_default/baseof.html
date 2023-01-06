@@ -43,13 +43,17 @@
     {{.Title}}
 </a>
 {{end}}
+
+<li class="navbar-lang">
+    <span class="with-angle">🇷🇺 RU</span>
 <ul class="dropdown langs ">
-    <span class="with-angle ">🇷🇺 RU</span>
-    <!-- <li><a href="">🇩🇪 DE</a></li>
-    <li><a href="">🇰🇿 KZ</a></li>
-    <li><a href="">🇺🇿 UZ</a></li> -->
+    <li><a href="https://aviatorcv.com/en/">🇬🇧 EN</a></li>
+    <li><a href="https://aviatorcv.com/de/">🇩🇪 DE</a></li>
+    <li><a href="https://aviatorcv.com/kz/">🇰🇿 KZ</a></li>
+    <li><a href="https://aviatorcv.com/uz/">🇺🇿 UZ</a></li>
 </ul>
 
+</li>
 
     </div>
 </div>
@@ -70,11 +74,11 @@
             $('.cover').fadeToggle();
             	});
             	
-   	$('.nav span.with-angle').click(
+   	$('.with-angle').click(
 		function() {
-		    $('.nav ul.dropdown').hide();
-		    $('.nav span.with-angle').removeClass('active');
-            $(this).next('.nav ul.dropdown').slideToggle();
+		    $('.dropdown').hide();
+		    $('with-angle').removeClass('active');
+            $(this).next('.dropdown').slideToggle();
             $(this).toggleClass('active');
             $('.cover').show();
             	});
@@ -95,7 +99,7 @@
         });
 
             	
-        console.log("hello555")
+        console.log("hello66")
             	
 });
 </script>
