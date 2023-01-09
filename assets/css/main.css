@@ -43,9 +43,7 @@ margin-top: 30px;
   margin:0;
   padding: 0;
 }
-.menu-btn{
-display:none;
-}
+
 .navbar-list{
     display:flex;
     margin-top: 20px;
@@ -111,11 +109,10 @@ text-align: center;
     border-radius: 4px;
     text-transform: uppercase;
     padding: 20px;
-    min-width: 280px; 
     text-decoration: none;
     color: #fff;
     background-color: #d74b6e;
-
+    min-width: 320px; 
 
 }
 .text-img{
@@ -184,9 +181,7 @@ margin: 0 auto;
     justify-content: space-between;
  
 }
-.subtitle h3{
-    width:200px;
-}
+
 h3{
     margin: 40px 10px 0;
     font-weight: 700;
@@ -256,7 +251,7 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
-    padding: 80px 10px 0;
+    padding: 20px 10px 0;
 
 }
 
@@ -269,9 +264,10 @@ h3{
     padding-top: 20px;  
 }
 .footer-desc p{
-    text-align: center;
-
+    text-align: center;       
     margin: 20px 10px 0;
+    font-size: 18px;
+    line-height:inherit;
 }
 
 /* language */
@@ -343,11 +339,16 @@ h3{
 
     .navbar-item:hover, .with-angle:hover,
     .dropdown li a:hover {
-        color: rgb(205,65,100); }
+        color: rgb(205,65,100); 
+    }
+    .subtitle {
+        width:180px;
+}
+
 } 
 
 
-    /* scroll  */
+    /* scroll/menu btn*/
 .cover { 
     display: none;
     position: fixed;
@@ -361,7 +362,36 @@ h3{
      .active{
      color: rgb(205,65,100); 
     }
-    .menu-btn.active:before { 
+    .menu-btn {
+         display: none; 
+        }
+
+    .menu-btn {
+    background: none;
+    border: 0 none;
+    float: right;
+    width: 30px; 
+    height: 30px; 
+    line-height: 30px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    margin: 10px 10px 0 0; 
+    display: block; 
+        }
+.menu-btn:before { 
+    font-family: 'Line Awesome Free';  
+    content: '\f0c9';
+     -moz-transition: 0.5s ease; 
+     -webkit-transition: 0.5s ease;
+     -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    font-weight: 900; 
+    display: block; 
+    height: inherit; 
+    line-height: inherit; 
+}
+
+.menu-btn.active:before { 
         transform: rotate(90deg); 
     }
 
@@ -369,14 +399,14 @@ h3{
         background: rgb(205,65,100); 
         border-radius: 50%;
         border: 0 none;
-        /* -moz-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
         -webkit-transition: 0.3s ease;
         -o-transition: 0.3s ease; 
-        transition: 0.3s ease; */
+        transition: 0.3s ease;
         overflow: hidden;
         opacity: 0.9;
         position: fixed;
-        z-index: 20000;
+        z-index: 50;
         right: 20px;
         bottom: 20px; 
         cursor: pointer; 
@@ -391,10 +421,8 @@ h3{
 
     #scroll-top:before {
     color: #FFFFFF;
-    /* font-family: "Font Awesome 5 Free"; */
     font-family: 'Line Awesome Free';  
     content:'\f106';
-    /* content: url('/images/up.svg'); */
     display: block;
     height: inherit;
     line-height: inherit;
@@ -408,7 +436,8 @@ h3{
 @media (min-width:1020px) {
 
    .link-button-mob{
-    display:none; }
+    display:none; 
+}
 }
 
 
@@ -418,6 +447,18 @@ h3{
     display:flex;
     flex-wrap: wrap;
    }
+   #scroll-top {
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+}
+.footer{
+    margin-top: 40px;
+}
 }
 
 @media (max-width:640px) {
@@ -454,9 +495,15 @@ flex-wrap: wrap;
     font-size: 18px;
     line-height: 26px;
 }
-    .logotype {
-         font-size: 26px; 
+.logotype {
+    font-size: 26px; 
         }
+
+.footer-list img{
+    width: 300px;
+    height: auto;
+    }
+
 }
 @media (max-width:640px){
     .text-thumb {

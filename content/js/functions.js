@@ -72,6 +72,18 @@ console.log("hello555")
 
 // // ------------------------------------------------
 
+
+
+
+
+
+
+
+
+
+
+
+
 // // aside-scroll.js-----------------------------------------------------
 // window.onscroll = () => {
 // 	const scrollBlock = document.getElementById('offer-card-fixed');
