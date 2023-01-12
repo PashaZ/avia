@@ -4,47 +4,49 @@
 {{partial "head" .}}
 
 <body >
-    <nav class="nav">
-<div class="container">
+<nav class="nav">
+    <div class="container">
     <a class="logo" href="/">
         Авиа<span class="logo-span">тор</span>
     </a>
 
-<button class="menu-btn"></button> 
+    <button class="menu-btn" aria-label="Menu"></button> 
 
-<div class="navbar-list">
+    <div class="navbar-list" 
+    itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <meta itemprop="name" content="Menu">
     {{range where .Site.RegularPages "Type"  "page"}}
         
     <a href="/" class="navbar-item">
         {{.Title}}
     </a>
-{{end}}    
-{{range where .Site.RegularPages "Type"  "reviews"}}
+    {{end}}    
+    {{range where .Site.RegularPages "Type"  "reviews"}}
         
             <a href="{{.Permalink}}" class="navbar-item">
                 {{.Title}}
             </a>
-{{end}}
-{{range where .Site.RegularPages "Type"  "strategies"}}
+    {{end}}
+    {{range where .Site.RegularPages "Type"  "strategies"}}
         
         <a href="{{.Permalink}}" class="navbar-item">
             {{.Title}}
         </a>
-{{end}}
-{{range where .Site.RegularPages "Type"  "download"}}
+    {{end}}
+    {{range where .Site.RegularPages "Type"  "download"}}
         
     <a href="{{.Permalink}}" class="navbar-item">
         {{.Title}}
     </a>
-{{end}}
-{{range where .Site.RegularPages "Type" "play"}}
+    {{end}}
+    {{range where .Site.RegularPages "Type" "play"}}
         
-<a href="{{.Permalink}}" class="navbar-item">
+    <a href="{{.Permalink}}" class="navbar-item">
     {{.Title}}
-</a>
-{{end}}
+    </a>
+    {{end}}
 
-<li class="navbar-lang">
+    <li class="navbar-lang">
     <span class="with-angle">🇷🇺 RU</span>
 <ul class="dropdown langs ">
     <li><a href="https://aviatorcv.com/en/">🇬🇧 EN</a></li>
@@ -77,13 +79,12 @@
    	$('.with-angle').click(
 		function() {
 		    $('.dropdown').hide();
-		    $('with-angle').removeClass('active');
+		    $('.with-angle').removeClass('active');
             $(this).next('.dropdown').slideToggle();
             $(this).toggleClass('active');
             $('.cover').show();
             	});
      
-
 
         
 
@@ -98,10 +99,21 @@
             $('body,html').animate({scrollTop:0},800);
         });
 
-            	
         console.log("hello66")
-            	
+    
+        
+// готове
 });
+
+$(document).click(function(event) {      	
+   	$('.cover').click(
+		function() {
+            $('.header nav, .dropdown').hide();
+            $('.with-angle, .menu-btn').removeClass('active');
+            $('.cover').fadeOut();
+            	});
+});
+
 
 </script>
 </body>
