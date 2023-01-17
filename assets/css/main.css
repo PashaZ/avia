@@ -23,42 +23,92 @@ body{
     margin:0px auto;
 }
 .nav{
-height: 130px;
+/* height: 130px;
 border-bottom: 2px solid #ebebeb;
-margin-top: 30px;
+margin-top: 30px; */
+
+border-bottom-width: 2px;
+border-bottom-style: solid;
+min-height: 40px;
+position: relative;
+z-index: 99999;
+padding-bottom: 10px;
+border-color: #ebebeb;
+display: block;
 
 }
 .logo{
-    margin-top: 30px;
+    /* margin-top: 30px;
     text-decoration: none;
     list-style: none;
     font-size: 44px;
     line-height: 50px;
     font-weight: 700;
     text-transform: uppercase; 
-    color:#373737;
+    color:#373737; */
+
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 44px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;  
+    margin: 10px 10px 0; 
+    color: #373737
 }
 .logo-span{
   color:#cd4164;  
   margin:0;
   padding: 0;
 }
+.menu-btn{
+    display:none;
+}
 
 .navbar-list{
-    display:flex;
-    margin-top: 20px;
-    justify-content:  center ;
-}
-.navbar-item{
-    display: flex;
-    margin: 0px 20px;
-    text-decoration: none;
+    overflow: visible;
+
+    display: block!important;
+    /* display: block; */
+    /* z-index: 100000; */
     
+    background: 0 0;
+    position: static;
+    box-shadow: none;
+    width: auto;
+    text-align: center;
+    padding: 10px 20px 20px 30px;
+    color: #ebebeb;
+
+}
+.navbar-list ul{
+    overflow: visible;
+
+}
+.navbar-list ul li{
+    margin: 10px 20px 0;  
+    overflow: visible;
+    display: inline-block;
+    vertical-align: top;   
+    position: relative;  
+    list-style-type: none;
+    cursor:pointer;
+}
+
+
+.navbar-item{
+    transition: .3s ease;
+    cursor: pointer;
     font-size: 16px;
     height: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    overflow: hidden;
+    display: block;
     color: #373737;
+    text-decoration: none;
+
 
 }
 /* hero */
@@ -276,20 +326,6 @@ h3{
 
 /* language */
 
-.navbar-lang{
-    position: relative;
-    display: block;
-    margin: 0px 20px;
-    text-decoration: none;
-    list-style: none;
-    
-    font-size: 16px;
-    height: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #373737;
-
-}
 .with-angle{
     transition: .3s ease;
     cursor: pointer;
@@ -298,6 +334,7 @@ h3{
     line-height: 30px;
     text-transform: uppercase;
     display: block;
+    color: #373737;
 }
 .with-angle:after {
      content: "\f107"; 
@@ -308,12 +345,13 @@ h3{
     }
 
 .langs {
+        box-sizing: content-box;
         min-width: 100px; 
     }
     
 .dropdown {
     /* ----------------------------------------- */
-    z-index: 101;
+    /* z-index: 101;
     display: none;
     
     position: absolute;
@@ -323,24 +361,52 @@ h3{
     padding: 20px;
     color: #EBEBEB;
     background-color: #232323;
+    border-radius: 4px; */
+
+    /* display: block; */
+
+    display: none;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
     border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #232323;
+    color: #ebebeb;
+    
     }
     .dropdown a{
         color: #EBEBEB;
         background-color: #232323;
     }
 .dropdown li{
-    display: block !important;
-    list-style: none;
-    text-decoration: none;
+    
+    /* display: block!important;  */
+    display:block;
     text-align: left;
+    margin: 10px 20px 0;
+    overflow: visible;
+    position: relative;
+    list-style-type: none;
+
 }
 .dropdown li a{
-    text-align: center;
-    display:block;
-    cursor:pointer;
+    font-size: 16px;
+    transition: .3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
     text-decoration: none;
-    color: #ebebeb;
+    overflow: hidden;
+    display: block;
+
 }
 header p{
     text-transform: uppercase;
@@ -425,14 +491,47 @@ header p{
 #scroll-top.circle-radius { border-radius: 50%; 
 }
 
-.menu-btn {
-    /* display: none;  */
-   }
 
 @media(max-width:1020px){
 
-.menu-btn {
-   background: none;
+
+    /* --------------------------------------------- */
+.cover { 
+    /* display: none; */
+    position: fixed;
+    /* z-index: 100000; */
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+     }
+    .nav { 
+        /* border-bottom-width: 2px;
+         border-bottom-style: solid; 
+         height: 40px; 
+         position: relative;
+          z-index: 99999; 
+         margin-top: 0;
+         padding-bottom: 10px;  */
+         
+         display: block;
+         box-sizing: content-box;
+         border-bottom-width: 2px;
+         border-bottom-style: solid;
+
+         min-height: 40px;
+
+         position: relative;
+         z-index: 99999;
+         padding-bottom: 10px;
+         border-color: #ebebeb;
+        overflow: visible;
+        
+
+        }
+
+    .menu-btn {
+   /* background: none;
    border: 0 none;
    float: right;
    width: 30px; 
@@ -441,10 +540,23 @@ header p{
    font-size: 30px; 
    cursor: pointer; 
    margin: 10px 10px 0 0; 
-   display: block; 
+   display: block;  */
+
+   background: 0 0;
+   border: 0;
+   float: right;
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   font-size: 30px;
+   cursor: pointer;
+   margin: 10px 10px 0 0;
+   display: block;
+   padding: 0;
+
        }
-.menu-btn:before { 
-   font-family: 'Line Awesome Free';  
+    .menu-btn:before { 
+   /* font-family: 'Line Awesome Free';  
    content: '\f0c9';
     -moz-transition: 0.5s ease; 
     -webkit-transition: 0.5s ease;
@@ -453,14 +565,47 @@ header p{
    font-weight: 900; 
    display: block; 
    height: inherit; 
-   line-height: inherit; 
-}
+   line-height: inherit;  */
+   
+   font-family: 'Line Awesome Free';  
+   content: '\f0c9';
+   transition: .5s ease;
+   font-weight: 900;
+   display: block;
+   height: inherit;
+   line-height: inherit;  
+    }
 
-.menu-btn.active:before { 
+    .menu-btn.active:before { 
        transform: rotate(90deg); 
    }
 
+    .logo {
+        /* font-size: 26px; 
+        margin: 10px 10px 0 10px;
+        overflow: hidden;
+        text-transform: uppercase;
+        display: block;
+        float: left; 
+        height: 30px; 
+        line-height: 30px;
+        font-weight: 700;
+        text-decoration: none;
+        color:#373737; */
 
+        margin: 10px 10px 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        font-size: 26px;
+        text-decoration: none;
+    }
     
 
     .text-article-block{
@@ -500,6 +645,112 @@ header p{
     .footer{
     margin-top: 40px;
     }
+
+    /* ----------------------------------------------- */
+
+    .navbar-list { 
+        /* display: block;
+         box-shadow: 5px 5px 15px -7px rgba(0,0,0,0.6); text-align: left; 
+         position: relative;
+          top: 50px; right: 0;
+          margin-left: auto; 
+        width: 270px;
+         padding: 5px 20px 20px 30px; */
+
+         /* box-shadow: 5px 5px 15px -7px rgb(0 0 0 / 60%); */
+        
+         display: none;
+         
+         box-sizing: content-box;
+         text-align: left;
+         width: 220px;
+         position: absolute;
+         top: 50px;
+         right: 0;
+         /* overflow: hidden; */
+         padding: 5px 20px 20px 30px;
+         background-color: #232323;
+         color: #ebebeb;
+         }
+
+         .navbar-list ul{
+            /* overflow: hidden; */
+         }
+         .navbar-list ul li{
+            /* overflow: hidden; */
+            margin-top: 15px;
+            position: relative;  
+            list-style: none;
+
+         }
+         
+    .with-angle{
+        transition: .3s ease;
+        cursor: pointer;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        overflow: hidden;
+        display: block; 
+        color: #ebebeb;
+        background-color: #232323;
+
+    } 
+
+    .with-angle:after { 
+        font-family: 'Line Awesome Free';  
+        content: "\f107";
+        font-weight: 900;
+        margin-left: 5px; 
+        }
+
+    .dropdown { 
+        /* display:block; 
+
+        position: absolute;
+        width: 270px;
+        padding: 0px 20px 20px 20px;
+        border-radius: 0;
+        right:0;
+        transform: translateX(-100px);
+        /* z-index: 990000; */
+
+        /* було */
+        /* position: absolute; */
+        position:relative;
+
+        top: 0;
+        box-sizing: border-box;
+        border-radius: 0;
+
+        display: none;
+        padding: 0 0 20px 0px;
+        background-color: #232323;
+        color: #ebebeb;
+        overflow: hidden;
+    }
+    .dropdown li{
+        display: block!important;
+        text-align: left;
+        user-select: none;
+        overflow: hidden;
+        margin-left: 0;
+        position: relative;
+    }
+    .dropdown a { 
+        font-size: 14px; 
+        background-color: #232323;
+        color: #ebebeb;
+        margin-left: 0;
+        padding-left: 0;
+ 
+    }
+    .navbar-list li img { float: left; height: 16px; width: auto; margin: 7px 5px 0 0; }
+    
+    .navbar-list, .navbar-list a, .navbar-list span, .navbar-list ul.dropdown, .navbar-list ul.dropdown a
+    { background-color: rgb(35,35,35); color: rgb(235,235,235); }
+
 }
 
 @media (max-width:640px) {
@@ -523,9 +774,6 @@ header p{
     line-height: 26px; 
 }
 
-    /* .logo {
-    font-size: 26px; 
-        } */
     .footer-list img{
     width: 300px;
     height: auto;
@@ -534,7 +782,25 @@ header p{
 
 }
 
+@media (max-width:640px){
+    .text-thumb {
+    width: 50%;
+       }
+       .logo {
+    font-size: 22px; 
+    margin: 10px 10px 0 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    float: left; 
+    height: 30px; 
+    line-height: 30px;
+}
 
+}
 @media (min-width: 640px){
     .text-thumb {
      width: 33.333%;
