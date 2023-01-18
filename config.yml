@@ -18,6 +18,11 @@ languages:
     languageName: de
     weight: 30
 
+  kz:
+    contentDir: content/kz
+    languageName: kz
+    weight: 30
+
 
 # sitename: "Site Name!"
 # baseURL: "/"
