@@ -1,4 +1,4 @@
 ---
-title: Download Aviator
+title: Aviator herunterladen
 url: /de/download
 ---

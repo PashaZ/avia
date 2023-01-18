@@ -1,4 +1,4 @@
 ---
-title: Aviator reviews
+title: Bewertungen Aviator
 url: /de/reviews
 ---

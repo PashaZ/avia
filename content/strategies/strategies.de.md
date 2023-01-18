@@ -1,4 +1,4 @@
 ---
-title: Aviator strategies
+title: Strategien Aviator
 url: /de/strategies
 ---

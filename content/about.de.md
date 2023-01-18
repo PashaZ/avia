@@ -1,4 +1,4 @@
 ---
-title: Авиатор de
+title: Aviator
 url: /de
 ---
