@@ -3,20 +3,20 @@ languageCode: 'en-us'
 title: 'My New Hugo Site'
 
 
-# languages:
+languages:
     # ru:
     # contentDir: /
     # languageName: ru
     # weight: 10
 
-  # en:
-  #   contentDir: content/en
-  #   languageName: English
-  #   weight: 20
-  # de:
-  #   contentDir: content
-  #   languageName: de
-  #   weight: 30
+  en:
+    contentDir: content/
+    languageName: en
+    weight: 20
+  de:
+    contentDir: content/de
+    languageName: de
+    weight: 30
 
 
 # sitename: "Site Name!"
