@@ -6,7 +6,7 @@
 <body >
 <nav class="nav">
     <div class="container">
-        <a class="logo" href="/de">
+        <a class="logo" href="/en">
             Avia<span class="logo-span">tor</span>
         </a>
 
@@ -56,12 +56,11 @@
         </a>
         {{end}}
     </li>
-    <!-- class="navbar-lang" -->
                 <li >
-                    <span class="with-angle">🇩🇪 DE</span>
+                    <span class="with-angle">🇬🇧 EN</span>
                     <ul class="dropdown langs ">
                         <li><a href="/">🇷🇺 RU</a></li>
-                        <li><a href="/en/">🇬🇧 EN</a></li>
+                        <li><a href="/de/">🇩🇪 DE</a></li>
                         <li><a href="/kz/">🇰🇿 KZ</a></li>
                         <li><a href="/uz/">🇺🇿 UZ</a></li>
                     </ul>
@@ -74,7 +73,7 @@
 </nav>
 
 {{block "content" .}}{{end}}
-{{block "footer.de" .}}{{end}}
+{{block "footer.en" .}}{{end}}
 
 <script>
     $(document).ready(function(){
@@ -112,7 +111,6 @@
         });
     
         
-// готове
 });
 
 $(document).click(function(event) {      	

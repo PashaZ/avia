@@ -2,17 +2,19 @@ baseURL: 'http://example.org/'
 languageCode: 'en-us'
 title: 'My New Hugo Site'
 
+defaultContentLanguage: ru
 
 languages:
-    # ru:
-    # contentDir: /
-    # languageName: ru
-    # weight: 10
+  ru:
+    contentDir: content/
+    languageName: ru
+    weight: 10
 
   en:
-    contentDir: content/
+    contentDir: content/en
     languageName: en
     weight: 20
+
   de:
     contentDir: content/de
     languageName: de
