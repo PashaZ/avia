@@ -1,4 +1,4 @@
 ---
 title: Aviator sharhlari
-url: /kz/reviews
+url: /uz/reviews
 ---

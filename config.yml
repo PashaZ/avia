@@ -21,7 +21,12 @@ languages:
   kz:
     contentDir: content/kz
     languageName: kz
-    weight: 30
+    weight: 40
+
+  uz:
+    contentDir: content/uz
+    languageName: uz
+    weight: 50
 
 
 # sitename: "Site Name!"
