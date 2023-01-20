@@ -12,6 +12,64 @@
 
         <button class="menu-btn" aria-label="Menu"></button> 
 
+<div class="navbar-list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <meta itemprop="name" content="Menu">
+<ul>
+    <li>
+        {{range where .Site.RegularPages "Type"  "page"}}
+    
+        <a href="/" class="navbar-item">
+            {{.Title}}
+        </a>
+        {{end}} 
+    </li>
+       
+    <li>
+        {{range where .Site.RegularPages "Type"  "reviews"}}
+                    
+        <a href="{{.Permalink}}" class="navbar-item">
+            {{.Title}}
+        </a>
+    {{end}}
+    </li>
+    <li>
+        {{range where .Site.RegularPages "Type"  "strategies"}}
+                    
+        <a href="{{.Permalink}}" class="navbar-item">
+            {{.Title}}
+        </a>
+    {{end}}
+    </li>
+    <li>
+        {{range where .Site.RegularPages "Type"  "download"}}
+                    
+        <a href="{{.Permalink}}" class="navbar-item">
+            {{.Title}}
+        </a>
+        {{end}}
+    </li>
+    <li>
+        {{range where .Site.RegularPages "Type" "play"}}
+                    
+        <a href="{{.Permalink}}" class="navbar-item">
+        {{.Title}}
+        </a>
+        {{end}}
+    </li>
+    <!-- class="navbar-lang" -->
+                <li >
+                    <span class="with-angle">🇷🇺 RU</span>
+                    <ul class="dropdown langs ">
+                        <li><a href="/en/">🇬🇧 EN</a></li>
+                        <li><a href="/de/">🇩🇪 DE</a></li>
+                        <li><a href="/kz/">🇰🇿 KZ</a></li>
+                        <li><a href="/uz/">🇺🇿 UZ</a></li>
+                    </ul>
+                </li>
+</ul>
+
+
+ </div>
     </div>
 </nav>
 
