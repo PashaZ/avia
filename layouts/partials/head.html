@@ -88,8 +88,8 @@
   {{$components := readDir "assets/css/components"}}
   {{range $components}}
 
-  {{$component := resources.Get (printf "css/components/%s" .Name) }}
-  {{$style = slice $component $style | resources.Concat .Name}}
+  <!-- {{$component := resources.Get (printf "css/components/%s" .Name) }}
+  {{$style = slice $component $style | resources.Concat .Name}} -->
   {{end}}
   
    {{$style = $style | toCSS | minify | fingerprint}}
