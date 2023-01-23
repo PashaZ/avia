@@ -23,10 +23,6 @@ body{
     margin:0px auto;
 }
 .nav{
-/* height: 130px;
-border-bottom: 2px solid #ebebeb;
-margin-top: 30px; */
-
 border-bottom-width: 2px;
 border-bottom-style: solid;
 min-height: 40px;
@@ -38,15 +34,6 @@ display: block;
 
 }
 .logo{
-    /* margin-top: 30px;
-    text-decoration: none;
-    list-style: none;
-    font-size: 44px;
-    line-height: 50px;
-    font-weight: 700;
-    text-transform: uppercase; 
-    color:#373737; */
-
     float: none;
     display: inline-block;
     vertical-align: top;
@@ -66,29 +53,10 @@ display: block;
     display:none;
 }
 
-.navbar-list{
-    overflow: visible;
 
-    display: block!important;
-    /* display: block; */
-    /* z-index: 100000; */
-    
-    background: 0 0;
-    position: static;
-    box-shadow: none;
-    width: auto;
-    text-align: center;
-    padding: 10px 20px 20px 30px;
-    color: #ebebeb;
-
-}
-.navbar-list ul{
-    overflow: visible;
-
-}
 .navbar-list ul li{
     margin: 10px 20px 0;  
-    overflow: visible;
+    /* overflow: visible; */
     display: inline-block;
     vertical-align: top;   
     position: relative;  
@@ -101,10 +69,9 @@ display: block;
     transition: .3s ease;
     cursor: pointer;
     font-size: 16px;
-    height: 30px;
     line-height: 30px;
     text-transform: uppercase;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: block;
     color: #373737;
     text-decoration: none;
@@ -208,7 +175,6 @@ justify-content:space-between;
 .two-cols {
 width:50%;
     }
-/* ----------------------------------------- */
 
 /* article-3  */
  p{
@@ -350,21 +316,6 @@ h3{
     }
     
 .dropdown {
-    /* ----------------------------------------- */
-    /* z-index: 101;
-    display: none;
-    
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    color: #EBEBEB;
-    background-color: #232323;
-    border-radius: 4px; */
-
-    /* display: block; */
-
     display: none;
 
     padding-top: 10px;
@@ -415,6 +366,19 @@ header p{
 }
 
  @media all and (min-width:1020px) {
+    .navbar-list{
+        /* overflow: visible; */
+    
+        display: block!important;       
+        background: 0 0;
+        position: static;
+        box-shadow: none;
+        width: auto;
+        text-align: center;
+        padding: 10px 20px 20px 30px;
+        color: #ebebeb;
+    
+    }
 
 .navbar-item:hover, 
 .with-angle:hover,
@@ -493,9 +457,6 @@ header p{
 
 
 @media(max-width:1020px){
-
-
-    /* --------------------------------------------- */
 .cover { 
     /* display: none; */
     position: fixed;
@@ -506,14 +467,6 @@ header p{
     height: 100%;
      }
     .nav { 
-        /* border-bottom-width: 2px;
-         border-bottom-style: solid; 
-         height: 40px; 
-         position: relative;
-          z-index: 99999; 
-         margin-top: 0;
-         padding-bottom: 10px;  */
-         
          display: block;
          box-sizing: content-box;
          border-bottom-width: 2px;
@@ -531,17 +484,6 @@ header p{
         }
 
     .menu-btn {
-   /* background: none;
-   border: 0 none;
-   float: right;
-   width: 30px; 
-   height: 30px; 
-   line-height: 30px; 
-   font-size: 30px; 
-   cursor: pointer; 
-   margin: 10px 10px 0 0; 
-   display: block;  */
-
    background: 0 0;
    border: 0;
    float: right;
@@ -556,17 +498,6 @@ header p{
 
        }
     .menu-btn:before { 
-   /* font-family: 'Line Awesome Free';  
-   content: '\f0c9';
-    -moz-transition: 0.5s ease; 
-    -webkit-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-   transition: 0.5s ease;
-   font-weight: 900; 
-   display: block; 
-   height: inherit; 
-   line-height: inherit;  */
-   
    font-family: 'Line Awesome Free';  
    content: '\f0c9';
    transition: .5s ease;
@@ -581,18 +512,6 @@ header p{
    }
 
     .logo {
-        /* font-size: 26px; 
-        margin: 10px 10px 0 10px;
-        overflow: hidden;
-        text-transform: uppercase;
-        display: block;
-        float: left; 
-        height: 30px; 
-        line-height: 30px;
-        font-weight: 700;
-        text-decoration: none;
-        color:#373737; */
-
         margin: 10px 10px 0;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -646,19 +565,7 @@ header p{
     margin-top: 40px;
     }
 
-    /* ----------------------------------------------- */
-
     .navbar-list { 
-        /* display: block;
-         box-shadow: 5px 5px 15px -7px rgba(0,0,0,0.6); text-align: left; 
-         position: relative;
-          top: 50px; right: 0;
-          margin-left: auto; 
-        width: 270px;
-         padding: 5px 20px 20px 30px; */
-
-         /* box-shadow: 5px 5px 15px -7px rgb(0 0 0 / 60%); */
-        
          display: none;
          
          box-sizing: content-box;
@@ -673,9 +580,6 @@ header p{
          color: #ebebeb;
          }
 
-         .navbar-list ul{
-            /* overflow: hidden; */
-         }
          .navbar-list ul li{
             /* overflow: hidden; */
             margin-top: 15px;
@@ -706,18 +610,6 @@ header p{
         }
 
     .dropdown { 
-        /* display:block; 
-
-        position: absolute;
-        width: 270px;
-        padding: 0px 20px 20px 20px;
-        border-radius: 0;
-        right:0;
-        transform: translateX(-100px);
-        /* z-index: 990000; */
-
-        /* було */
-        /* position: absolute; */
         position:relative;
 
         top: 0;

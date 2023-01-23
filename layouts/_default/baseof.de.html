@@ -56,7 +56,6 @@
         </a>
         {{end}}
     </li>
-    <!-- class="navbar-lang" -->
                 <li >
                     <span class="with-angle">🇩🇪 DE</span>
                     <ul class="dropdown langs ">
@@ -112,13 +111,12 @@
         });
     
         
-// готове
 });
 
 $(document).click(function(event) {      	
    	$('.cover').click(
 		function() {
-            $('.navbar-list-55, .dropdown').hide();
+            $('.navbar-list, .dropdown').hide();
             $('.with-angle, .menu-btn').removeClass('active');
             $('.cover').fadeOut();
             	});
